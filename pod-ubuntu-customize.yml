@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: ubuntu-customize
+  namespace: default
+spec:
+  serviceAccountName: sa
+  containers:
+    - name: ubuntu-cont
+      image: heshamelshereef26/ubuntu-custom:v2.0.0
+    
+
